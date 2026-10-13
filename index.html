@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en-GB" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Collaborative Lab Automation Workshop Series | Imperial College London</title>
+  <meta name="description" content="Five seminars and a concluding workshop on AI for Science and Lab Automation, organised by the I-X Centre for AI in Science at Imperial College London. From November 2026, hybrid.">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="color-scheme" content="light">
+
+  <!-- Link previews (Teams, Slack, LinkedIn, WeChat…). After deploying, replace the og:image
+       value with the full URL, e.g. https://<username>.github.io/<repo>/assets/img/og-image.png -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Imperial College London">
+  <meta property="og:title" content="Collaborative Lab Automation Workshop Series">
+  <meta property="og:description" content="AI for Science &amp; Lab Automation: five seminars and a concluding workshop at Imperial College London, from November 2026. Join in person or online.">
+  <meta property="og:image" content="assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-person" viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.75" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M4.75 20c.6-3.6 3.6-6 7.25-6s6.65 2.4 7.25 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.6 6.4 12 13l8.4-6.6" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="Collaborative Lab Automation Workshop Series, Imperial College London: back to top">
+      <svg class="brand-logo" viewBox="0 0 531 93" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M54.38,73.90 L19.12,73.54 L19.25,63.18 L30.25,62.92 L31.10,62.00 L31.04,29.50 L19.25,28.70 L19.38,19.09 L54.82,19.25 L54.70,28.75 L42.75,28.95 L41.91,29.88 L41.96,62.38 L54.75,63.17 L54.38,73.90 Z M136.38,73.90 L126.33,73.25 L126.51,37.88 L125.62,36.97 L117.03,55.38 L116.91,57.50 L114.12,61.93 L104.25,61.91 L102.44,60.62 L99.24,51.50 L95.25,44.38 L95.22,42.50 L93.18,38.25 L92.12,38.14 L91.94,73.38 L81.37,73.62 L81.37,19.25 L96.75,19.15 L108.62,47.90 L112.29,42.38 L112.32,40.50 L121.53,19.25 L136.75,19.14 L137.02,73.00 L136.38,73.90 Z M172.50,73.88 L163.50,73.92 L162.43,73.12 L162.45,19.62 L163.75,18.94 L188.50,19.01 L195.62,22.06 L198.90,25.25 L202.05,32.62 L202.02,41.38 L197.89,49.62 L193.62,52.82 L187.25,54.92 L173.15,55.25 L172.50,73.88 Z M258.50,73.89 L223.74,73.50 L223.99,19.12 L259.04,19.38 L258.62,28.85 L235.12,28.94 L234.03,29.88 L234.50,39.81 L255.12,39.94 L256.15,40.88 L255.62,50.85 L234.25,51.23 L234.15,62.50 L258.75,63.08 L259.16,73.00 L258.50,73.89 Z M325.50,73.90 L315.00,73.63 L305.68,55.25 L303.50,53.94 L294.25,54.41 L294.02,73.62 L283.94,73.62 L284.07,19.12 L312.38,18.96 L318.88,22.12 L322.11,25.25 L324.31,30.75 L324.29,41.25 L322.01,45.75 L315.34,51.50 L326.19,71.38 L325.50,73.90 Z M382.62,73.90 L348.00,73.62 L348.12,63.13 L359.12,62.92 L359.91,62.00 L359.86,29.50 L348.12,28.75 L348.13,19.12 L383.37,19.38 L383.25,28.62 L372.38,28.96 L371.36,29.88 L371.39,62.25 L383.25,63.25 L383.52,73.00 L382.62,73.90 Z M452.88,73.90 L442.17,73.75 L438.88,62.42 L437.88,61.94 L419.12,62.04 L415.37,73.62 L404.00,73.56 L403.92,71.50 L421.25,19.06 L436.57,19.38 L442.69,37.62 L442.68,40.38 L453.68,71.50 L452.88,73.90 Z M511.25,73.89 L476.06,73.62 L476.25,19.07 L487.78,19.50 L487.88,62.51 L511.50,63.08 L511.25,73.89 Z M184.76,44.88 L187.50,43.50 L190.55,39.38 L190.61,34.75 L189.40,32.25 L186.25,29.19 L182.76,28.00 L173.27,28.12 L173.12,44.59 L184.76,44.88 Z M306.20,43.88 L309.50,42.75 L312.76,39.50 L312.68,32.25 L309.50,29.12 L306.12,27.98 L294.50,28.15 L294.27,43.50 L306.20,43.88 Z M434.43,51.88 L434.90,49.50 L429.93,35.38 L429.89,32.50 L428.25,32.01 L422.58,48.62 L422.58,51.25 L434.43,51.88 Z"/></svg>
+      <span class="brand-divider" aria-hidden="true"></span>
+      <span class="brand-series" aria-hidden="true">Collaborative Lab Automation Workshop Series</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Main">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>Menu
+      </button>
+      <ul id="nav-list" class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#programme">Programme</a></li>
+        <li><a href="#speakers">For speakers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================================================================ HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">I-X Centre for AI in Science · Seminar &amp; workshop series</p>
+          <h1 class="hero-title" id="hero-title">
+            <span class="line">Collaborative</span>
+            <span class="line">Lab Automation</span>
+            <span class="line">Workshop Series</span>
+          </h1>
+          <p class="hero-subtitle">AI for Science &amp; Lab Automation</p>
+          <p class="hero-lede">Five seminars and a concluding workshop, bringing together researchers and practitioners from AI, robotics and the experimental sciences at Imperial College London.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#programme">Explore the programme <svg class="icon arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-ghost" href="#speakers">Information for speakers</a>
+          </div>
+        </div>
+
+        <!-- Closed loop: AI agents plan, robots execute, experimental results feed back -->
+        <figure class="hero-visual">
+          <svg class="loop" id="loop" viewBox="0 0 520 430" aria-hidden="true" focusable="false">
+            <g class="loop-edge"><path class="loop-arc" d="M320.3 123.6A140 140 0 0 1 399.6 261"/><path class="loop-head" d="M399.2 266L405.6 254.4L394.6 253.6Z"/><text class="loop-verb" x="408" y="176" text-anchor="start">PLAN</text></g>
+            <g class="loop-edge"><path class="loop-arc" d="M339.3 365.4A140 140 0 0 1 180.7 365.4"/><path class="loop-head" d="M176.6 362.5L183.4 373.9L189.6 364.8Z"/><text class="loop-verb" x="260" y="420" text-anchor="middle">EXECUTE</text></g>
+            <g class="loop-edge"><path class="loop-arc" d="M120.4 261A140 140 0 0 1 199.7 123.6"/><path class="loop-head" d="M204.2 121.5L191 121.7L195.8 131.6Z"/><text class="loop-verb" x="112" y="176" text-anchor="end">LEARN</text></g>
+            <circle class="loop-dot" cx="260" cy="110" r="6"/>
+            <g class="loop-node" transform="translate(260 110)"><circle class="loop-disc" r="52"/><g class="loop-icon" transform="translate(-30 -30) scale(1.25)"><path d="M20 9c1.6 9.4 4.6 12.4 14 14-9.4 1.6-12.4 4.6-14 14-1.6-9.4-4.6-12.4-14-14 9.4-1.6 12.4-4.6 14-14z"/><path d="M37 4c.7 3.8 1.9 5 5.7 5.7-3.8.7-5 1.9-5.7 5.7-.7-3.8-1.9-5-5.7-5.7 3.8-.7 5-1.9 5.7-5.7z"/><circle class="solid" cx="38.5" cy="36.5" r="2.2"/></g><text class="loop-name" y="-70">AI agents</text></g>
+            <g class="loop-node" transform="translate(381.2 320)"><circle class="loop-disc" r="52"/><g class="loop-icon" transform="translate(-30 -30) scale(1.25)"><path d="M7 43h24"/><path d="M12 43v-3.5a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3V43"/><path d="M17 36.5 25.5 17.5"/><path d="M25.5 17.5 38.5 24"/><circle cx="25.5" cy="17.5" r="3.4"/><path d="M38.5 24v4M34.5 28h8M35.5 28v6M41.5 28v6"/></g><text class="loop-name" y="82">Robots</text></g>
+            <g class="loop-node" transform="translate(138.8 320)"><circle class="loop-disc" r="52"/><g class="loop-icon" transform="translate(-30 -30) scale(1.25)"><path d="M18.5 5h11M21 5v12.5L9.6 38.8A3 3 0 0 0 12.3 43h23.4a3 3 0 0 0 2.7-4.2L27 17.5V5"/><path d="M13.8 31h20.4"/><circle class="solid" cx="21" cy="37" r="1.5"/><circle class="solid" cx="27.5" cy="35" r="1.2"/></g><text class="loop-name" y="82">Experiments</text></g>
+            <text class="loop-centre" x="260" y="246">Closed-loop</text>
+            <text class="loop-centre" x="260" y="272">discovery</text>
+          </svg>
+          <figcaption class="loop-caption">AI agents plan experiments, robots carry them out, and the results flow back to decide what to try next.</figcaption>
+        </figure>
+      </div>
+
+      <dl class="hero-facts">
+        <div><dt>Organised by</dt><dd>Dr Dandan Zhang, Lan Wei &amp; Dr Qiming Liu</dd></div>
+        <div><dt>Series begins</dt><dd>November 2026</dd></div>
+        <div><dt>Format</dt><dd>5 seminars + 1 workshop</dd></div>
+        <div><dt>Where</dt><dd>Imperial College London &amp; online</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ================================================================ STATEMENT -->
+  <section class="band" aria-label="Focus of the series">
+    <div class="container">
+      <p class="band-text">Exploring how agentic and embodied AI can accelerate scientific discovery, from hypothesis to robotic experiment <span class="em">and back again.</span></p>
+    </div>
+  </section>
+
+  <!-- ================================================================ ABOUT -->
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="section-index"><span class="num">01</span><span class="rule" aria-hidden="true"></span>About</p>
+        <h2 class="section-title" id="about-title">About the series</h2>
+        <p class="section-subtitle">Two connected themes: AI for Science and Lab Automation</p>
+      </header>
+
+      <div class="about-grid">
+        <div class="prose">
+          <p>The <strong>Collaborative Lab Automation Workshop Series</strong> is organised by the I-X Centre for AI in Science at Imperial College London. It brings together researchers and practitioners from AI, robotics and the experimental sciences to explore how agentic and embodied AI can support the scientific research cycle: from hypothesis generation and experimental design to robotic execution, data analysis and iterative discovery.</p>
+          <p>Discussions will focus on how advances in large language models, autonomous agents, robotic manipulation and multi-agent systems can enable intelligent, adaptable laboratory automation, with applications across bioengineering, drug discovery, materials science and chemical engineering.</p>
+          <p>We are bringing together a mix of senior researchers, early-career researchers, postdocs and PhD students, with perspectives from both academia and industry.</p>
+        </div>
+
+        <div class="themes">
+          <article class="theme-card">
+            <p class="kicker">Theme 01</p>
+            <h3>AI for Science</h3>
+            <p>Large language models, autonomous agents and multi-agent systems that reason over literature and data, generate hypotheses and plan experiments.</p>
+          </article>
+          <article class="theme-card">
+            <p class="kicker">Theme 02</p>
+            <h3>Lab Automation</h3>
+            <p>Embodied AI and robotic manipulation for intelligent, adaptable laboratories that run experiments, measure outcomes and learn from them.</p>
+          </article>
+        </div>
+      </div>
+
+      <figure class="cycle" aria-labelledby="cycle-title">
+        <figcaption class="cycle-head">
+          <h3 id="cycle-title">From hypothesis to discovery</h3>
+          <p>The research cycle that connects the two themes</p>
+        </figcaption>
+        <div class="cycle-track">
+          <ol class="cycle-steps">
+            <li class="cycle-step">
+              <span class="step-num">01</span>
+              <h4>Hypothesis generation</h4>
+              <p>Language models and agents that read, reason and propose testable ideas.</p>
+            </li>
+            <li class="cycle-step">
+              <span class="step-num">02</span>
+              <h4>Experimental design</h4>
+              <p>Planning experiments that are informative, feasible and efficient.</p>
+            </li>
+            <li class="cycle-step">
+              <span class="step-num">03</span>
+              <h4>Robotic execution</h4>
+              <p>Embodied AI and robotic manipulation running protocols on real lab hardware.</p>
+            </li>
+            <li class="cycle-step">
+              <span class="step-num">04</span>
+              <h4>Data analysis</h4>
+              <p>Turning measurements into insight, and uncertainty into the next question.</p>
+            </li>
+            <li class="cycle-step">
+              <span class="step-num">05</span>
+              <h4>Iterative discovery</h4>
+              <p>Closing the loop, so that each round of results sharpens the next.</p>
+            </li>
+          </ol>
+          <p class="cycle-loop"><span class="cycle-loop-glyph" aria-hidden="true">↺</span> Results feed back into new hypotheses</p>
+        </div>
+      </figure>
+
+      <div class="facets">
+        <div>
+          <h3 class="facet-title">Topics</h3>
+          <ul class="chips">
+            <li>Large language models</li>
+            <li>Autonomous agents</li>
+            <li>Robotic manipulation</li>
+            <li>Multi-agent systems</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="facet-title">Applications</h3>
+          <ul class="chips chips--filled">
+            <li>Bioengineering</li>
+            <li>Drug discovery</li>
+            <li>Materials science</li>
+            <li>Chemical engineering</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================ PROGRAMME -->
+  <section class="section section--tint" id="programme" aria-labelledby="programme-title">
+    <div class="container">
+      <div class="agenda">
+        <header class="agenda-head">
+          <p class="section-index"><span class="num">02</span><span class="rule" aria-hidden="true"></span>Programme</p>
+          <h2 class="display" id="programme-title">Programme</h2>
+          <p class="section-subtitle">From November 2026</p>
+        </header>
+        <!-- Quick index. The grey status text on the right is filled in automatically
+             from the event details below, so you only need to edit each event once. -->
+        <ol class="agenda-list">
+          <li><a href="#seminar-1"><span class="n">1</span><span class="t">Seminar 1</span><span class="s" data-agenda-for="seminar-1">Speaker TBA</span></a></li>
+          <li><a href="#seminar-2"><span class="n">2</span><span class="t">Seminar 2</span><span class="s" data-agenda-for="seminar-2">Speaker TBA</span></a></li>
+          <li><a href="#seminar-3"><span class="n">3</span><span class="t">Seminar 3</span><span class="s" data-agenda-for="seminar-3">Speaker TBA</span></a></li>
+          <li><a href="#seminar-4"><span class="n">4</span><span class="t">Seminar 4</span><span class="s" data-agenda-for="seminar-4">Speaker TBA</span></a></li>
+          <li><a href="#seminar-5"><span class="n">5</span><span class="t">Seminar 5</span><span class="s" data-agenda-for="seminar-5">Speaker TBA</span></a></li>
+          <li><a href="#workshop"><span class="n">6</span><span class="t">Concluding workshop</span><span class="s" data-agenda-for="workshop">Date TBC</span></a></li>
+        </ol>
+      </div>
+
+      <p class="programme-note">Dates, speakers and talk titles will be announced here as they are confirmed. All events are hybrid: join us in person at Imperial College London or online.</p>
+
+      <!--
+        HOW TO FILL IN A SEMINAR SLOT
+        1. Change data-status="tba" to data-status="confirmed".
+        2. Replace the talk title, speaker name, affiliation, date and time.
+        3. Photo (optional): put a square image in assets/img/speakers/ and replace the
+           placeholder <div class="speaker-photo speaker-photo--tba">...</div> with
+           <img class="speaker-photo" src="assets/img/speakers/firstname-lastname.jpg" alt="">
+        4. Abstract and biography (optional): paste this inside <div class="event-main">,
+           after the speaker block:
+           <details class="abstract">
+             <summary>Abstract &amp; biography</summary>
+             <p>Abstract text.</p>
+             <p>Short biography.</p>
+           </details>
+        5. Two speakers in one seminar: duplicate the <div class="speaker">...</div> block.
+      -->
+      <ol class="events">
+
+        <!-- ===================== SEMINAR 1 ===================== -->
+        <li class="event" id="seminar-1" data-status="tba">
+          <p class="event-num" aria-hidden="true">01</p>
+          <div class="event-main">
+            <p class="event-kind">Seminar 1</p>
+            <h3 class="event-title">Talk title to be announced</h3>
+            <div class="speaker">
+              <div class="speaker-photo speaker-photo--tba" aria-hidden="true"><svg class="icon"><use href="#i-person"/></svg></div>
+              <div>
+                <p class="speaker-name">Speaker to be announced</p>
+                <p class="speaker-affil">Affiliation to be announced</p>
+              </div>
+            </div>
+          </div>
+          <dl class="event-meta">
+            <div><dt>Date</dt><dd>To be confirmed</dd></div>
+            <div><dt>Time</dt><dd>To be confirmed</dd></div>
+            <div><dt>Format</dt><dd>~30-min talk + Q&amp;A</dd></div>
+            <div><dt>Venue</dt><dd>Imperial College London &amp; online</dd></div>
+          </dl>
+        </li>
+
+        <!-- ===================== SEMINAR 2 ===================== -->
+        <li class="event" id="seminar-2" data-status="tba">
+          <p class="event-num" aria-hidden="true">02</p>
+          <div class="event-main">
+            <p class="event-kind">Seminar 2</p>
+            <h3 class="event-title">Talk title to be announced</h3>
+            <div class="speaker">
+              <div class="speaker-photo speaker-photo--tba" aria-hidden="true"><svg class="icon"><use href="#i-person"/></svg></div>
+              <div>
+                <p class="speaker-name">Speaker to be announced</p>
+                <p class="speaker-affil">Affiliation to be announced</p>
+              </div>
+            </div>
+          </div>
+          <dl class="event-meta">
+            <div><dt>Date</dt><dd>To be confirmed</dd></div>
+            <div><dt>Time</dt><dd>To be confirmed</dd></div>
+            <div><dt>Format</dt><dd>~30-min talk + Q&amp;A</dd></div>
+            <div><dt>Venue</dt><dd>Imperial College London &amp; online</dd></div>
+          </dl>
+        </li>
+
+        <!-- ===================== SEMINAR 3 ===================== -->
+        <li class="event" id="seminar-3" data-status="tba">
+          <p class="event-num" aria-hidden="true">03</p>
+          <div class="event-main">
+            <p class="event-kind">Seminar 3</p>
+            <h3 class="event-title">Talk title to be announced</h3>
+            <div class="speaker">
+              <div class="speaker-photo speaker-photo--tba" aria-hidden="true"><svg class="icon"><use href="#i-person"/></svg></div>
+              <div>
+                <p class="speaker-name">Speaker to be announced</p>
+                <p class="speaker-affil">Affiliation to be announced</p>
+              </div>
+            </div>
+          </div>
+          <dl class="event-meta">
+            <div><dt>Date</dt><dd>To be confirmed</dd></div>
+            <div><dt>Time</dt><dd>To be confirmed</dd></div>
+            <div><dt>Format</dt><dd>~30-min talk + Q&amp;A</dd></div>
+            <div><dt>Venue</dt><dd>Imperial College London &amp; online</dd></div>
+          </dl>
+        </li>
+
+        <!-- ===================== SEMINAR 4 ===================== -->
+        <li class="event" id="seminar-4" data-status="tba">
+          <p class="event-num" aria-hidden="true">04</p>
+          <div class="event-main">
+            <p class="event-kind">Seminar 4</p>
+            <h3 class="event-title">Talk title to be announced</h3>
+            <div class="speaker">
+              <div class="speaker-photo speaker-photo--tba" aria-hidden="true"><svg class="icon"><use href="#i-person"/></svg></div>
+              <div>
+                <p class="speaker-name">Speaker to be announced</p>
+                <p class="speaker-affil">Affiliation to be announced</p>
+              </div>
+            </div>
+          </div>
+          <dl class="event-meta">
+            <div><dt>Date</dt><dd>To be confirmed</dd></div>
+            <div><dt>Time</dt><dd>To be confirmed</dd></div>
+            <div><dt>Format</dt><dd>~30-min talk + Q&amp;A</dd></div>
+            <div><dt>Venue</dt><dd>Imperial College London &amp; online</dd></div>
+          </dl>
+        </li>
+
+        <!-- ===================== SEMINAR 5 ===================== -->
+        <li class="event" id="seminar-5" data-status="tba">
+          <p class="event-num" aria-hidden="true">05</p>
+          <div class="event-main">
+            <p class="event-kind">Seminar 5</p>
+            <h3 class="event-title">Talk title to be announced</h3>
+            <div class="speaker">
+              <div class="speaker-photo speaker-photo--tba" aria-hidden="true"><svg class="icon"><use href="#i-person"/></svg></div>
+              <div>
+                <p class="speaker-name">Speaker to be announced</p>
+                <p class="speaker-affil">Affiliation to be announced</p>
+              </div>
+            </div>
+          </div>
+          <dl class="event-meta">
+            <div><dt>Date</dt><dd>To be confirmed</dd></div>
+            <div><dt>Time</dt><dd>To be confirmed</dd></div>
+            <div><dt>Format</dt><dd>~30-min talk + Q&amp;A</dd></div>
+            <div><dt>Venue</dt><dd>Imperial College London &amp; online</dd></div>
+          </dl>
+        </li>
+
+        <!-- ===================== CONCLUDING WORKSHOP ===================== -->
+        <li class="event event--workshop" id="workshop" data-status="tba">
+          <p class="event-num" aria-hidden="true">06</p>
+          <div class="event-main">
+            <p class="event-kind">Concluding workshop</p>
+            <h3 class="event-title">Workshop &amp; panel discussion</h3>
+            <p class="workshop-lede">The series concludes with a workshop at Imperial College London, including a panel discussion with perspectives from academia and industry on:</p>
+            <ul class="workshop-topics">
+              <li>Emerging research directions</li>
+              <li>Interdisciplinary and academia–industry collaboration</li>
+              <li>Opportunities for joint projects and funding</li>
+            </ul>
+            <div class="panel">
+              <p class="panel-label">Panellists</p>
+              <!-- To confirm a panellist, replace a slot with:
+                   <li><img class="slot-photo" src="assets/img/speakers/name.jpg" alt=""><span><strong>Prof. Name</strong> Affiliation</span></li> -->
+              <ul class="panel-slots">
+                <li><span class="slot-photo" aria-hidden="true"><svg class="icon"><use href="#i-person"/></svg></span><span>Panellist to be announced</span></li>
+                <li><span class="slot-photo" aria-hidden="true"><svg class="icon"><use href="#i-person"/></svg></span><span>Panellist to be announced</span></li>
+                <li><span class="slot-photo" aria-hidden="true"><svg class="icon"><use href="#i-person"/></svg></span><span>Panellist to be announced</span></li>
+                <li><span class="slot-photo" aria-hidden="true"><svg class="icon"><use href="#i-person"/></svg></span><span>Panellist to be announced</span></li>
+              </ul>
+            </div>
+          </div>
+          <dl class="event-meta">
+            <div><dt>Date</dt><dd>To be confirmed</dd></div>
+            <div><dt>Time</dt><dd>To be confirmed</dd></div>
+            <div><dt>Format</dt><dd>Workshop &amp; panel discussion</dd></div>
+            <div><dt>Venue</dt><dd>In person at Imperial College London, with online participation</dd></div>
+          </dl>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================================================================ FOR SPEAKERS -->
+  <section class="section" id="speakers" aria-labelledby="speakers-title">
+    <div class="container">
+      <div class="speakers-grid">
+        <header class="section-head">
+          <p class="section-index"><span class="num">03</span><span class="rule" aria-hidden="true"></span>For speakers</p>
+          <h2 class="section-title" id="speakers-title">Information for speakers</h2>
+          <p class="section-subtitle">Thank you for considering our invitation</p>
+          <p class="section-intro">We would be delighted if you could share your research and perspectives with our interdisciplinary community. Here is what speaking in the series involves.</p>
+        </header>
+
+        <div class="info-grid">
+          <article class="info-item">
+            <p class="kicker">Your talk</p>
+            <h3>Around 30 minutes, then discussion</h3>
+            <p>A talk on your research or professional work and its relevance to AI for Science and Lab Automation, followed by questions and discussion.</p>
+          </article>
+          <article class="info-item">
+            <p class="kicker">Participation</p>
+            <h3>In person or online</h3>
+            <p>All events are hybrid. You are welcome to speak in person at Imperial College London or to join us online, whichever suits you best.</p>
+          </article>
+          <article class="info-item">
+            <p class="kicker">Scheduling</p>
+            <h3>A date that works for you</h3>
+            <p>Once you let us know you are interested, we will follow up by email to agree a suitable date, the talk details and your preferred mode of participation.</p>
+          </article>
+          <article class="info-item">
+            <p class="kicker">Audience</p>
+            <h3>An interdisciplinary community</h3>
+            <p>Researchers and practitioners from AI, robotics and the experimental sciences, with seminar invitations circulated across Imperial College London.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="cta-panel">
+        <div>
+          <h3>Interested in speaking?</h3>
+          <p>Simply reply to your invitation email, or write to the organisers. We would be delighted to hear from you.</p>
+        </div>
+        <a class="btn btn-primary" href="mailto:d.zhang17@imperial.ac.uk,l.wei24@imperial.ac.uk,q.liu2@imperial.ac.uk?subject=Collaborative%20Lab%20Automation%20Workshop%20Series"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> Email the organisers</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================ CONTACT -->
+  <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <p class="section-index"><span class="num">04</span><span class="rule" aria-hidden="true"></span>Organisers &amp; contact</p>
+      <h2 class="display" id="contact-title">Get in touch</h2>
+      <p class="contact-lede">For questions about the series, speaking or attending, please contact the organisers.</p>
+
+      <ul class="people">
+        <li class="person">
+          <h3>Dr Dandan Zhang</h3>
+          <p class="role">Co-organiser · Imperial College London</p>
+          <a href="mailto:d.zhang17@imperial.ac.uk"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>d.zhang17@imperial.ac.uk</a>
+        </li>
+        <li class="person">
+          <h3>Lan Wei</h3>
+          <p class="role">Co-organiser · Imperial College London</p>
+          <a href="mailto:l.wei24@imperial.ac.uk"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>l.wei24@imperial.ac.uk</a>
+        </li>
+        <li class="person">
+          <h3>Dr Qiming Liu</h3>
+          <p class="role">Co-organiser · Imperial College London</p>
+          <a href="mailto:q.liu2@imperial.ac.uk"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>q.liu2@imperial.ac.uk</a>
+        </li>
+      </ul>
+
+      <div class="support">
+        <p class="kicker">Supported by</p>
+        <p>The <a href="https://www.imperial.ac.uk/ix-ai-in-science/ai-in-science-and-lab-automation-awards-for-imperial-staff/">AI in Science and Lab Automation Event Fund</a> of the <a href="https://www.imperial.ac.uk/ix-ai-in-science/">I-X Centre for AI in Science</a>, Imperial College London.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <strong>Imperial College London</strong>
+    <span>Collaborative Lab Automation Workshop Series</span>
+    <a href="#top">Back to top ↑</a>
+    <!-- Update this date whenever you change the page -->
+    <span>Updated <time datetime="2026-10-13">13/10/2026</time></span>
+  </div>
+</footer>
+
+</body>
+</html>
